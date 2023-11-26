@@ -1,0 +1,21 @@
+.gradient {
+    background: linear-gradient(to right, #9747FF , #20BDFF , #A5FECB );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.gradientBtn {
+    border: 2px solid black;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {border-color: #9747FF;}
+  }
+  .text-container {
+    overflow: hidden;
+  }
+  .text {
+    /* background-color: red; */
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }

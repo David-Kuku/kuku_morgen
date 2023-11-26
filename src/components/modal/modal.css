@@ -1,0 +1,27 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 49;
+    /* Ensure the overlay appears below the modal (z-index: 50) */
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    /* Semi-transparent black background */
+}
+
+.modal-container {
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.modal-container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

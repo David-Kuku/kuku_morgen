@@ -1,0 +1,41 @@
+.text-container {
+    overflow: hidden;
+    position: relative;
+  }
+  .text {
+    animation: slideUp 6s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    display: none;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(to right, #9747FF , #20BDFF , #A5FECB );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+    }
+    10% {
+      transform: translateY(0);
+    }
+    /* 30% {
+      transform: translateY(-15px);
+    } */
+    50% {
+      transform: translateY(0);
+    }
+    /* 70% {
+      transform: translateY(-7px);
+    } */
+    90%,
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .text.active {
+    display: block;
+  }
